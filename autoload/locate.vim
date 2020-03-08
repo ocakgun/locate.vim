@@ -405,7 +405,7 @@ function! locate#input(input, add)
     let total_matches = len(getloclist(0))
     echo total_matches . ' match(es) found.'
     if total_matches
-      let height = min([total_matches, g:locate_max_height]) + 5
+      let height = min([total_matches, g:locate_max_height]) + 3
       call s:open_location_list(height, s:patterns[locate_id], inputs.position, 0)
     endif
   else
